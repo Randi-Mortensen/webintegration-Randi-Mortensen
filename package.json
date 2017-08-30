@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "webintegration",
   "version": "1.0.0",
   "description": "y",
   "main": "y",
@@ -12,5 +12,8 @@
     "url": "y"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "date-format": "^1.1.0"
+  }
 }

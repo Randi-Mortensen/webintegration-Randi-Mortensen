@@ -8,8 +8,6 @@
 //     }
 // }
 
-//dato: new Date(),
-
 // module.exports = {
 //     BMI: function (weight, height) {
 //         var result = "";
@@ -24,3 +22,17 @@
 //         return result + " (bmi: " + bmi + ")";
 //     }
 // }
+
+var format = require('date-format');
+
+function sub(tal1, tal2) {
+    return tal1 - tal2;
+}
+
+module.exports = {
+    sum: function (tal1, tal2) {
+        return tal1 + tal2;
+    },
+    sub,
+    dato: format.asString('hh:mm:ss.SSS', new Date()),
+};
