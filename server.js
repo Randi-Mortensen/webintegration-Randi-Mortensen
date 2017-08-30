@@ -1,13 +1,16 @@
-const http = require('http');
-const hostname = '127.0.0.1';
-const port = 3000;
+//var figur = require('./modules/disney');
+var beregn = require('./Modules/beregn');
+//var bmi = require('./Modules/bmi');
+//console.log(figur.fullname()[0]);
 
-const figur = require('./modules/disney');
+//console.log(figur.fullname()[1]);
 
-http.createServer(function (req, res) {
-    res.write(figur.fullname());
-    res.write(figur.birthday);
-    res.end();
-}).listen(port, hostname);
+// console.log(figur.firstname + " " + figur.lastname);
 
-console.log(`serveren kører på http://${hostname}:${port}/`);
+//console.log(figur.fullname());
+
+//console.log(beregn.sum(6, 8));
+
+//console.log(beregn.dato);
+
+console.log(beregn.BMI(75, 180));
